@@ -8,3 +8,7 @@ streamlit
 scikeras
 pickle-mixin
 plotly
+keras
+h5py
+
+
