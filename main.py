@@ -66,7 +66,7 @@ word_index, reverse_word_index = load_word_index()
 # Load the pre-trained model
 @st.cache_resource
 def load_sentiment_model():
-    return tf.keras.load_model('imdb_model.h5')
+    return load_model('imdb_model.h5')
 
 model = load_sentiment_model()
 
