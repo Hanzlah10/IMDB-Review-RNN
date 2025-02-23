@@ -1,5 +1,5 @@
 import numpy as np
-# import tensorflow as tf
+import tensorflow as tf
 from tensorflow.keras.datasets import imdb
 from tensorflow.keras.preprocessing import sequence
 from tensorflow.keras.models import load_model
@@ -66,7 +66,7 @@ word_index, reverse_word_index = load_word_index()
 # Load the pre-trained model
 @st.cache_resource
 def load_sentiment_model():
-    return load_model('imdb_model.h5')
+    return tf.keras.load_model('imdb_model.h5')
 
 model = load_sentiment_model()
 
